@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bold Text</title>
+  </head>
+  <body>
+    <p>
+      [<a
+        href="#"
+        onMouseOver="highlightItems()"
+        onMouseOut="returnToNormalItem()"
+        >On mouse over</a
+      >]
+    </p>
+    <p>
+      <strong>We</strong> have just started <strong>this</strong> section for
+      the users (<strong>beginner</strong> to intermediate) who
+      <strong>want</strong> to work with <strong>various</strong> JavaScript
+      <strong>problems</strong> and write scripts online to
+      <strong>test</strong> their JavaScript <strong>skill</strong>.
+    </p>
+
+    <script>
+      var bold_Items;
+      window.onload = highlightBoldItems();
+
+      function highlightBoldItems() {
+        bold_Items = document.getElementsByTagName("strong");
+      }
+
+      function highlightItems() {
+        for (var i = 0; i < bold_Items.length; i++) {
+          bold_Items[i].style.color = "green";
+        }
+      }
+
+      function returnToNormalItem() {
+        for (var i = 0; i < bold_Items.length; i++) {
+          bold_Items[i].style.color = "black";
+        }
+      }
+    </script>
+  </body>
+</html>

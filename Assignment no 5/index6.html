@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="images">
+      <img src="./pictures/image1.jpeg" alt="photo" height="150px" />
+      <img src="./pictures/image2.jpeg" alt="photo" height="150px" />
+      <img src="./pictures/image3.jpeg" alt="photo" height="150px" />
+      <img src="./pictures/image4.jpg" alt="photo" height="150px" />
+      <img src="./pictures/image5.jpeg" alt="photo" height="150px" />
+      <img src="./pictures/image6.jpeg" alt="photo" height="150px" />
+    </div>
+
+    <script>
+        const note1 = document.querySelector('img:nth-child(odd)');
+        note1.style.border = '10px solid red';
+        const note = document.querySelector('img:nth-child(even)');
+        note.style.border = '10px solid orange';
+    </script>
+  </body>
+</html>
